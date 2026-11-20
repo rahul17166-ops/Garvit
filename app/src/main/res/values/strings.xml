@@ -68,4 +68,10 @@
     <string name="api_probe_section">Mail.tm OpenAPI / Hydra Probe</string>
     <string name="toolchain_section">Build &amp; Dependency Matrix</string>
     <string name="ci_section">GitHub Actions CI Pipeline</string>
+
+    <!-- Maker Credit -->
+    <string name="maker_credit_footer">Made by Garvit Gupta</string>
+    <string name="maker_section_title">Maker</string>
+    <string name="maker_name">Garvit Gupta</string>
+    <string name="maker_role">Creator &amp; Developer of MailVault</string>
 </resources>

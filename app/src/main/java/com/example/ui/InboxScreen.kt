@@ -178,6 +178,40 @@ fun InboxScreen(
         }
       }
 
+      item(key = "maker_credit") {
+        Box(
+          modifier = Modifier
+            .fillMaxWidth()
+            .padding(top = 6.dp)
+            .testTag("maker_credit_footer"),
+          contentAlignment = Alignment.Center,
+        ) {
+          Surface(
+            shape = RoundedCornerShape(999.dp),
+            color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.6f),
+            border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline.copy(alpha = 0.35f)),
+          ) {
+            Row(
+              modifier = Modifier.padding(horizontal = 14.dp, vertical = 6.dp),
+              verticalAlignment = Alignment.CenterVertically,
+              horizontalArrangement = Arrangement.spacedBy(6.dp),
+            ) {
+              Icon(
+                imageVector = Icons.Filled.Shield,
+                contentDescription = null,
+                tint = MaterialTheme.colorScheme.primary,
+                modifier = Modifier.size(14.dp),
+              )
+              Text(
+                text = stringResource(R.string.maker_credit_footer),
+                style = MaterialTheme.typography.labelSmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+              )
+            }
+          }
+        }
+      }
+
       item(key = "bottom_spacer") {
         Spacer(modifier = Modifier.height(16.dp))
       }

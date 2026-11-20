@@ -240,6 +240,56 @@ fun DiagnosticsScreen(
         }
       }
 
+      item(key = "maker_credit_card") {
+        Card(
+          modifier = Modifier
+            .fillMaxWidth()
+            .testTag("maker_credit_card"),
+          shape = MaterialTheme.shapes.large,
+          border = BorderStroke(1.dp, MaterialTheme.colorScheme.primary.copy(alpha = 0.4f)),
+          colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+        ) {
+          Row(
+            modifier = Modifier
+              .fillMaxWidth()
+              .padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(14.dp),
+          ) {
+            Surface(
+              shape = RoundedCornerShape(14.dp),
+              color = MaterialTheme.colorScheme.primaryContainer,
+              modifier = Modifier.size(46.dp),
+            ) {
+              Box(contentAlignment = Alignment.Center) {
+                Text(
+                  text = "GG",
+                  style = MaterialTheme.typography.titleMedium,
+                  color = MaterialTheme.colorScheme.primary,
+                )
+              }
+            }
+            Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
+              Text(
+                text = stringResource(R.string.maker_section_title).uppercase(),
+                style = MaterialTheme.typography.labelSmall,
+                color = MaterialTheme.colorScheme.primary,
+              )
+              Text(
+                text = stringResource(R.string.maker_name),
+                style = MaterialTheme.typography.titleLarge,
+                color = MaterialTheme.colorScheme.onSurface,
+              )
+              Text(
+                text = stringResource(R.string.maker_role),
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+              )
+            }
+          }
+        }
+      }
+
       item(key = "diag_bottom_spacer") {
         Spacer(modifier = Modifier.height(16.dp))
       }
