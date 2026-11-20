@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">MailVault</string>
+
+    <!-- Navigation -->
+    <string name="nav_inbox">Inbox</string>
+    <string name="nav_identity">Address</string>
+    <string name="nav_diagnostics">Compatibility</string>
+
+    <!-- Inbox -->
+    <string name="inbox_title">MailVault</string>
+    <string name="inbox_subtitle">Disposable Encrypted Relay</string>
+    <string name="active_address_label">ACTIVE MAILBOX</string>
+    <string name="copy_address">Copy</string>
+    <string name="copied_snackbar">Address copied to clipboard</string>
+    <string name="refresh_inbox">Refresh inbox</string>
+    <string name="rotate_address">New address</string>
+    <string name="auto_sync_active">Auto-sync 15s</string>
+    <string name="messages_header">Incoming Messages</string>
+    <string name="unread_badge">NEW</string>
+    <string name="empty_inbox_title">Inbox Ready &amp; Listening</string>
+    <string name="empty_inbox_body">Copy your active Mail.tm address above and send a test message. Incoming mail arrives automatically.</string>
+    <string name="no_subject">(No Subject)</string>
+    <string name="unknown_sender">Unknown Sender</string>
+    <string name="creating_mailbox">Provisioning disposable mailbox…</string>
+    <string name="retry_action">Retry</string>
+    <string name="message_deleted">Message deleted</string>
+    <string name="account_rotated">New disposable address ready</string>
+    <string name="account_deleted">Disposable mailbox burned</string>
+
+    <!-- Message Detail -->
+    <string name="back_action">Back</string>
+    <string name="delete_message">Delete message</string>
+    <string name="tab_rendered">Message</string>
+    <string name="tab_source">MIME Source</string>
+    <string name="from_label">From</string>
+    <string name="to_label">To</string>
+    <string name="date_label">Received</string>
+    <string name="size_label">Size</string>
+    <string name="loading_message">Fetching full message body…</string>
+    <string name="loading_source">Fetching raw RFC-5322 source…</string>
+    <string name="no_message_body">This message contains no text body.</string>
+    <string name="attachments_label">Attachments</string>
+
+    <!-- Identity / Account Manager -->
+    <string name="identity_title">Mailbox Identity</string>
+    <string name="create_custom_title">Create Custom Address</string>
+    <string name="username_label">Username</string>
+    <string name="username_hint">e.g. cipherrelay92</string>
+    <string name="domain_label">Active Mail.tm Domain</string>
+    <string name="password_label">Mailbox Password</string>
+    <string name="create_address_button">Provision Mailbox</string>
+    <string name="quick_random_button">Instant Random Address</string>
+    <string name="sign_in_existing_title">Sign In to Existing Mailbox</string>
+    <string name="email_address_label">Email Address</string>
+    <string name="sign_in_button">Authenticate via /token</string>
+    <string name="account_quota_title">Account Quota &amp; Spec</string>
+    <string name="burn_mailbox_button">Burn Current Mailbox</string>
+    <string name="burn_confirm_title">Permanently Burn Mailbox?</string>
+    <string name="burn_confirm_body">This calls DELETE /accounts/{id} on Mail.tm and immediately destroys this address and all messages.</string>
+    <string name="cancel_action">Cancel</string>
+    <string name="confirm_burn">Burn Permanently</string>
+
+    <!-- Diagnostics / Compatibility -->
+    <string name="diagnostics_title">Compatibility &amp; CI</string>
+    <string name="diagnostics_subtitle">Toolchain Matrix &amp; Live Mail.tm API Audit</string>
+    <string name="run_probe_button">Run Live API Probe</string>
+    <string name="probing_label">Probing api.mail.tm…</string>
+    <string name="api_probe_section">Mail.tm OpenAPI / Hydra Probe</string>
+    <string name="toolchain_section">Build &amp; Dependency Matrix</string>
+    <string name="ci_section">GitHub Actions CI Pipeline</string>
+</resources>

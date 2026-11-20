@@ -1,0 +1,6 @@
+{
+  "name": "MailVault",
+  "description": "Disposable email client powered by the Mail.tm API with verified Android Gradle, Kotlin, Compose BOM, and GitHub Actions CI configurations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
